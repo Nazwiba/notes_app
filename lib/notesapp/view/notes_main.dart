@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:notes_app/model/notes_model.dart';
+import 'package:notes_app/notesapp/model/notes_model.dart';
 
 import 'splash_screen/splash_screen.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
   }
